@@ -1,8 +1,3 @@
-:root {
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration: 250ms;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -24,7 +19,11 @@ body {
   background-color: #fff;
 }
 
-button {
+.timer {
+  display: flex;
+}
+
+.field {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -46,11 +45,9 @@ button {
   border-width: 0;
 }
 
-.btn-disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-
-  /*Button disabled - CSS color class*/
-  color: #c0c0c0;
-  background-color: #ffffff;
+.value {
+  display: block;
+  margin-right: 10px;
+  font-weight: 900;
+  font-size: 35px;
 }
