@@ -4,8 +4,9 @@ class CountdownTimer {
         this.countdown = null;
         this.selector = selector;
         this.targetDate = targetDate;
+        this.run();
     }
-
+    
     run() {
         const days = document.querySelector(`${this.selector} [data-value="days"]`);
         const hours = document.querySelector(`${this.selector} [data-value="hours"]`);
@@ -61,17 +62,15 @@ class CountdownTimer {
         }, 1000);
     }
 
+    
 
 }
 
 
 const testCountdown = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Jul 30, 2021'),
+  targetDate: new Date('Jun 6, 2021'),
 });
-
-
-testCountdown.run();
 
 
 
